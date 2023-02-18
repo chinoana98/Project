@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+      span {
+        color: #ffff;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: 100;
+      }
+      h1 {
+        background: 44.8deg;
+        text-align: center;
+        color: #7fc693;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #2c5d63;
+        line-height: 50px;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 4px;
+        color: #ee6f56;
+      }
+      a {
+        color: #dfa96e;
+        font-size: 20px;
+      }
+
+      em {
+        color: #edca87;
+      }
+      body {
+        display: block;
+        margin: 8px;
+        background: radial-gradient(
+          circle at -8.9% 51.2%,
+          rgb(255, 124, 0) 0%,
+          rgb(255, 124, 0) 15.9%,
+          rgb(255, 163, 77) 15.9%,
+          rgb(255, 163, 77) 24.4%,
+          rgb(19, 30, 37) 24.5%,
+          rgb(19, 30, 37) 66%
+        );
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 30px;
+        margin: 15px 0 15px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7fc693;
+        color: #f7f7f7;
+        font-size: 24px;
+        padding: 15px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 100ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .yogurt-recipes {
+        color: #ee6f56;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: cursive;
+      }
+      .click-here-hover {
+        text-decoration: underline;
+        font-size: 12px;
+      }
+      .footer {
+        text-align: center;
+        color: #fff1d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <strong> Do you crave a delicious high quality Yogurt? </strong>
+      </h1>
+      <h2>WE GOT IT</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/090/original/Greek_Yogurt.jpeg?1642463428"
+        alt=" Greek Yogurt"
+        width="500"
+      />
+      <hr />
+      <p>
+        <em>Think beyond sweet!</em> 🤤
+        <span
+          >We have many great selection's of organic flavorful yogurt such as
+          peach 🍑 flavor which is our best seller, we also have cherry 🍒 and
+          many more. First yogurt purchase will come with free shipping and
+          handling 📦
+        </span>
+        <br />
+      </p>
+
+      <a
+        href="https://www.eatthis.com/best-yogurt-based-recipes/"
+        target="_blank"
+        class="Yogurt-recipes"
+      >
+        Yogurt recipes click here
+      </a>
+
+      <button class="buy-button">Buy Fresh Here</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.linkedin.com/in/ana-karen-chino/" target="_blank">
+          <strong> Ana K. Chino </strong>
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, meanwhile enjoy some free yogurt on us! " +
+            emoji
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
